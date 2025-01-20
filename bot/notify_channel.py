@@ -49,7 +49,7 @@ async def notify_channel(data: dict): # message: str
             "name": data.get("name"),
             "description": data.get("description"),
             "mint": data.get("mint"),
-            "url": f"https://pump.fun/coin/{data.get("mint")}"
+            "url": f"https://pump.fun/coin/{data.get('mint')}"
         }
         
         get_token_in_db = await databasework.get_token_by_token_address(result['mint'])
