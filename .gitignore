@@ -1,6 +1,7 @@
 # Custom
 *_dev.*
 *.sqlite3*
+*.db
 
 bot/logs/*
 !bot/logs/.gitkeep
