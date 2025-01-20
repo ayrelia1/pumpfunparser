@@ -14,6 +14,7 @@ async def get_featured_token() -> list[dict]:
     start_time = time.monotonic()  # Начало отсчета времени
     async with aiohttp.ClientSession(headers=headers) as s:
         async with s.get(API_LINK) as response:
+            print(await response.text())
             resp = await response.json()
     elapsed_time = time.monotonic() - start_time  # Вычисляем затраченное время
     print(f"Время выполнения запроса: {elapsed_time:.2f} секунд")
