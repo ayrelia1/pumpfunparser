@@ -28,7 +28,10 @@ class Settings(BaseSettings): # создаем settings class
 
     DATABASE_URL: str =  f"sqlite+aiosqlite:///database.db.sqlite3"
 
-
+    PROXY_IP: str = os.getenv("BOPROXY_IPT_TOKEN")
+    PROXY_PORT: int = os.getenv("PROXY_PORT")
+    PROXY_LOGIN: str = os.getenv("PROXY_LOGIN")
+    PROXY_PASS: str = os.getenv("PROXY_PASS")
         
 settings = Settings()
      
