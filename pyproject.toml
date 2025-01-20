@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "dexscreneer_top_cc"
+version = "0.1.0"
+description = ""
+authors = ["ayrelia1 <nikitakoteqka12@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiogram = "^3.17.0"
+aiohttp = "^3.11.11"
+aiosqlite = "^0.20.0"
+sqlalchemy = "^2.0.37"
+python-dotenv = "^1.0.1"
+apscheduler = "^3.11.0"
+pydantic-settings = "^2.7.1"
+pytz = "^2024.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
