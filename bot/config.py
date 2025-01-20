@@ -26,7 +26,7 @@ class Settings(BaseSettings): # создаем settings class
     MAX_MARKET_CAP: int = 8500
     MAX_CREATED_TIME: int = 600
 
-    DATABASE_URL: str =  f"sqlite+aiosqlite:///database.db"
+    DATABASE_URL: str =  f"sqlite+aiosqlite:///database.db.sqlite"
 
 
         

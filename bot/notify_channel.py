@@ -92,7 +92,7 @@ async def notify_channel(data: dict): # message: str
                     f"<b>💰 Name:</b> {result['name']}\n"
                     f"<b>🪙 CA:</b> \n<code>{result['mint']}</code>\n"
                     f"<b>💵 USD Market Cap:</b> ${int(result['market_cap'])}\n"
-                    f'🏞 <a href="{result['image_url']}">Image</a>\n'
+                    f"""🏞 <a href="{result['image_url']}">Image</a>\n"""
                     f"<b>🔗 URL:</b> {result['url']}\n"
                     f"<b>Time ago:</b> {minutes_ago}m ago\n"
                     f"<b>Replies:</b> {result['reply_count']}\n"
