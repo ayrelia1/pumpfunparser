@@ -4,7 +4,6 @@ import aiohttp
 
 API_LINK = "https://frontend-api-v2.pump.fun/coins/for-you?offset=0&limit=50&includeNsfw=false"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36"
-PROXY = "http://0rX0Jv:dMjJJ6@196.18.15.58:8000"
 
 headers = {
     "User-Agent": UA,
@@ -13,7 +12,7 @@ headers = {
 async def get_featured_token() -> list[dict]:
     start_time = time.monotonic()  # Начало отсчета времени
     async with aiohttp.ClientSession(headers=headers) as s:
-        async with s.get(API_LINK, proxy=PROXY) as response:
+        async with s.get(API_LINK) as response:
             print(await response.text())
             resp = await response.json()
     elapsed_time = time.monotonic() - start_time  # Вычисляем затраченное время
